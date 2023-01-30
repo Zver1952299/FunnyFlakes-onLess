@@ -1,0 +1,44 @@
+@import 'vars';
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: @text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    padding-bottom: 0 0 10px;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+// Blocks
+
+@import 'blocks/page';
+@import 'blocks/intro';
+@import 'blocks/nav';
+@import 'blocks/card';

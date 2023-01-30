@@ -1,0 +1,270 @@
+// main: ../style.less
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 1500px;
+    height: 100%;
+    padding-top: 20rem;
+    background: url(images/2/bgnew.png) top no-repeat;
+    background-color: @pinklight;
+    background-size: contain;
+}
+
+.card {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 1040px;
+    height: 100%;
+
+    background-color: inherit;
+    border: 2px solid @text;
+}
+
+.card__container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card__title {
+    margin-top: 2.93rem;
+    
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__subtitle {
+    max-width: 600px;
+    width: 100%;
+    margin: 0.26rem auto 0;
+
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.card__namegroup {
+    max-width: 800px;
+    width: 100%;
+    height: 92px;
+    margin-top: 5.33rem;
+    padding-top: 1.46rem;
+
+    font-weight: 500;
+    font-size: 1.86rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: 0.13rem solid @text;
+    background-color: @pink;
+}
+
+.card__groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5.33rem;
+    margin-bottom: 2.33rem;
+    padding-bottom: 4.33rem;
+
+    border-bottom: 0.13rem solid #1d4c8b;
+}
+
+.card__group {
+    width: 305px;
+}
+
+.card__group-title {
+    margin-bottom: 0.73rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.card__group-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    position: relative;
+}
+
+.card__group-item {
+    display: block;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	user-select: none;
+
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    line-height: 0.8;
+}
+
+.card__group-prop {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 1.2;
+}
+
+.card__group-price {
+    margin-right: 2.33rem;
+
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.2;
+}
+
+.card__group-check{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    & + label::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        border: 0.06rem solid @text;
+        background-color: inherit;
+
+        position: absolute;
+        top: 2px;
+        right: 0;
+        z-index: 1111;
+    }
+
+    &:checked + label::before {
+        background-color: @pink;
+    }
+}
+
+.card__extra {
+    padding-bottom: 2rem;
+
+    border-bottom: 0.12rem solid @text;
+}
+
+.card__extra-text {
+    margin-bottom: 2rem;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: @text;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    text-align: center;
+}
+
+.card__extra-inner {
+    display: flex;
+}
+
+.card__extra-name {
+    margin-right: 2.66rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.card__extra-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    position: relative;
+}
+
+.card__extra-item {
+    display: flex;
+	margin: 0 0.66rem 0.66rem 0;
+	cursor: pointer;
+	user-select: none;
+
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.2;
+
+    position: relative;
+}
+
+.card__extra-check{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    & + label::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+    
+        border: 0.06rem solid @text;;
+        background-color: inherit;
+        cursor: pointer;
+    
+        position: absolute;
+        top: 2px;
+        right: 0;
+        z-index: 1111;
+    }
+
+    &:checked + label::before {
+        background-color: @pink;
+    }
+}
+
+.card__extra-label {
+    margin-right: 1.66rem;
+}
+
+.card__extra-prop {
+    max-width: 70px;
+    width: 100%;
+
+    position: relative;
+}
+
+.card__extra-price {
+    margin-right: 2.33rem;
+}
+
+.card__btn {
+    display: block;
+    margin: 3.33rem auto 0;
+    width: 270px;
+    height: 80px;
+    
+    background-color: @text;
+    border: none;
+    border-radius: 3.33rem;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 1.33rem;
+    color: #fff;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+
+    transition: background-color .2s linear, color .2s linear;
+
+    &:hover {
+        background-color: @pink;
+
+        color: #000;
+    }
+}

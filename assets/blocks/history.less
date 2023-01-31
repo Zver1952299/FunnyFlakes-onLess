@@ -1,0 +1,56 @@
+// main: ../style.less
+
+.history {
+    width: 100%;
+}
+
+.history__row {
+    display: flex;
+    flex-direction: row;
+    max-height: 720px;
+
+    background-color: @bgblue;
+}
+
+.history__img {
+    width: 50%;
+
+    &--face {
+        margin: auto;
+        width: 286px;
+        height: 355px;
+    }
+}
+
+.history__inner-img {
+    margin: auto;
+    max-height: 720px;
+}
+
+.history__content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: @pink;
+}
+
+.history__content-inner {
+    max-width: 450px;
+    width: 100%;
+    text-align: left;
+}
+
+.history__content-title {
+    font-weight: 700;
+    font-size: 3.33rem;
+    text-transform: uppercase;
+}
+
+.history__content-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+

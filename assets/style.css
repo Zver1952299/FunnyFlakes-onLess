@@ -25,7 +25,7 @@ h6 {
   margin: 0;
 }
 p {
-  padding-bottom: 0 0 10px;
+  padding: 0 0 0.66rem;
 }
 img {
   pointer-events: none;
@@ -302,13 +302,12 @@ img {
 .card__extra-price {
   margin-right: 2.33rem;
 }
-.card__btn {
+.btn {
   display: block;
   margin: 3.33rem auto 0;
-  width: 270px;
-  height: 80px;
+  padding: 1.25em 3em;
   background-color: #1d4c8b;
-  border: none;
+  border: 1px solid #1d4c8b;
   border-radius: 3.33rem;
   cursor: pointer;
   font-weight: 500;
@@ -318,7 +317,116 @@ img {
   text-transform: uppercase;
   transition: background-color 0.2s linear, color 0.2s linear;
 }
-.card__btn:hover {
+.btn:hover {
   background-color: #fecfc4;
   color: #000;
+}
+.btn--small {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+}
+.btn--pink {
+  color: #1d4c8b;
+  background-color: #fecfc4;
+}
+.btn--pink:hover {
+  background-color: #ffffff;
+}
+.combos {
+  width: 100%;
+  padding: 4.4rem 0 8.66rem;
+  background-color: #a8baca;
+  text-align: center;
+}
+.combos__title {
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.26rem;
+}
+.combos__text {
+  width: 460px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+.combos__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 1065px;
+  width: 100%;
+  margin: 4.66rem auto;
+  padding: 0 1.33rem;
+}
+.combos__item {
+  max-width: 310px;
+  width: 100%;
+  padding: 3.33rem 2.38rem;
+  background-color: #fecfc4;
+  border: 0.06rem solid #1d4c8b;
+}
+.combos__item-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.combos__item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.26rem;
+  text-transform: uppercase;
+  line-height: 1.46rem;
+}
+.combos__item-price {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.history {
+  width: 100%;
+}
+.history__row {
+  display: flex;
+  flex-direction: row;
+  max-height: 720px;
+  background-color: #a8baca;
+}
+.history__img {
+  width: 50%;
+}
+.history__img--face {
+  margin: auto;
+  width: 286px;
+  height: 355px;
+}
+.history__inner-img {
+  margin: auto;
+  max-height: 720px;
+}
+.history__content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fecfc4;
+}
+.history__content-inner {
+  max-width: 450px;
+  width: 100%;
+  text-align: left;
+}
+.history__content-title {
+  font-weight: 700;
+  font-size: 3.33rem;
+  text-transform: uppercase;
+}
+.history__content-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }

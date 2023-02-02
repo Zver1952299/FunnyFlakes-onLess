@@ -14,17 +14,7 @@
 
 .history__img {
     width: 50%;
-
-    &--face {
-        margin: auto;
-        width: 286px;
-        height: 355px;
-    }
-}
-
-.history__inner-img {
-    margin: auto;
-    max-height: 720px;
+    height: auto;
 }
 
 .history__content {
@@ -43,14 +33,44 @@
 }
 
 .history__content-title {
+    margin-bottom: 3rem;
+
     font-weight: 700;
     font-size: 3.33rem;
     text-transform: uppercase;
 }
 
+.history__content-wrapper {
+    display: flex;
+}
+
+.history__smile {
+    width: 94px;
+    height: 94px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 126px;
+        height: 126px;
+        margin-right: 2.33em;
+        margin-bottom: 3rem;
+
+        background-color: @bgblue;
+        border-radius: 50%;
+    }
+}
+
+.history__content-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .history__content-text {
+    max-width: 305px;
+
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.7rem;
 }
-

@@ -398,15 +398,7 @@ img {
 }
 .history__img {
   width: 50%;
-}
-.history__img--face {
-  margin: auto;
-  width: 286px;
-  height: 355px;
-}
-.history__inner-img {
-  margin: auto;
-  max-height: 720px;
+  height: auto;
 }
 .history__content {
   width: 50%;
@@ -421,12 +413,123 @@ img {
   text-align: left;
 }
 .history__content-title {
+  margin-bottom: 3rem;
   font-weight: 700;
   font-size: 3.33rem;
   text-transform: uppercase;
 }
+.history__content-wrapper {
+  display: flex;
+}
+.history__smile {
+  width: 94px;
+  height: 94px;
+}
+.history__smile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  height: 126px;
+  margin-right: 2.33em;
+  margin-bottom: 3rem;
+  background-color: #a8baca;
+  border-radius: 50%;
+}
+.history__content-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 .history__content-text {
+  max-width: 305px;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7rem;
+}
+.footer {
+  background-color: #fff;
+}
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 7.66rem;
+}
+.footer__content:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 9rem;
+  padding: 0 7.66rem;
+}
+.footer__item {
+  width: 10.66rem;
+}
+.footer__item--long {
+  width: 35rem;
+}
+.footer__title {
+  padding-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.footer__text {
+  padding-bottom: 3rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.46rem;
+}
+.footer__text:last-child {
+  padding-bottom: 5rem;
+}
+.footer__form {
+  display: flex;
+  padding-top: 1.33rem;
+}
+.footer__input {
+  max-width: 315px;
+  width: 100%;
+  height: 45px;
+  padding: 0 1.66rem;
+  background-color: #fff;
+  border: 0.12rem solid #1d4c8b;
+  outline: #fecfc4;
+  color: #1d4c8b;
+}
+.footer__btn {
+  max-width: 170px;
+  width: 100%;
+  height: 50px;
+  margin-left: 3rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #1d4c8b;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  top: -3px;
+  transition: background-color 0.2s linear;
+}
+.footer__btn:hover {
+  background-color: #2158a0;
+}
+.footer__social {
+  margin-right: 2rem;
+}
+.footer__social:last-child {
+  margin: 0;
+}
+.footer__copyright {
+  height: 75px;
+  padding-top: 2rem;
+  background-color: #a8baca;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
 }
